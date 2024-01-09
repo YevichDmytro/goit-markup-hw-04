@@ -115,17 +115,24 @@ img {
 
 .contacts-item-element:hover,
 .contacts-item-element:focus,
-.contacts-item-element:active,
 .menu-item-element:hover,
-.menu-item-element:focus,
-.menu-item-element:active {
+.menu-item-element:focus {
   color: #404bbf;
 }
 
 /* --------------------------------section-1-------------------------------- */
-/* -----------------------------slogan & button----------------------------- */
+/* ----------------------------------Hero----------------------------------- */
 .section-title {
-  background-color: #2e2f42;
+  max-width: 100%;
+  /* max-width: 1440px; */
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -173,7 +180,7 @@ img {
 }
 
 /* --------------------------------section-2-------------------------------- */
-/* --------------------------------directions------------------------------- */
+/* ---------------------------------features-------------------------------- */
 .subtitle {
   font-weight: bold;
   font-size: 36px;
@@ -199,16 +206,24 @@ img {
   overflow: hidden;
 }
 
-.directions-list {
+.features-list {
   display: flex;
   gap: 24px;
 }
 
-.directions-list-item {
+.features-list-item {
   display: flex;
-  min-width: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 4);
   flex-direction: column;
   align-items: flex-start;
+}
+
+.features-list-item > div {
+  padding: 24px 100px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
 }
 
 .subtitle-item {
@@ -223,7 +238,7 @@ img {
   font-size: 16px;
 }
 
-.directions-item-subtitle {
+.features-item-subtitle {
   margin-bottom: 8px;
 }
 
@@ -253,17 +268,34 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.team-list-item:hover .team-icons-link {
+  background-color: #404bbf;
+}
+
 .container-team-box {
   padding: 32px 0;
 }
 
-.team-item-subtitle {
+.team-item-subtitle,
+.team-item-text {
   text-align: center;
   margin-bottom: 8px;
 }
 
-.team-item-text {
-  text-align: center;
+.container-team-icons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.team-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 /* --------------------------------section-4-------------------------------- */
@@ -301,6 +333,11 @@ img {
   padding: 100px 0;
 }
 
+.container-footer {
+  display: flex;
+  gap: 120px;
+}
+
 .logo-bottom {
   display: inline-block;
   flex-shrink: 0;
@@ -315,4 +352,30 @@ img {
   color: #f4f4fd;
   /* hw3 */
   max-width: 264px;
+}
+
+.footer-social-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.container-footer-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-icons-link:hover {
+  background-color: #31d0aa;
 }
