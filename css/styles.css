@@ -11,7 +11,6 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   background-color: #ffffff;
-  max-width: 1440px;
   width: 100%;
 }
 
@@ -56,7 +55,6 @@ img {
   background: #fff;
   position: fixed;
   top: 0;
-  max-width: 1440px;
   width: 100%;
   z-index: 999;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -169,6 +167,7 @@ img {
   max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
+  margin: 0 auto;
 }
 
 .container-title {
